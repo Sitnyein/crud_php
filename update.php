@@ -17,7 +17,8 @@
     $red = "SELECT * FROM task where id=$id";
     $read = mysqli_query($con,$red);
     $rad= mysqli_fetch_assoc($read);
-
+    echo "<pre>";
+     var_dump($rad);
     
     if(isset($_POST['crbtn'])) {
       $name = $_POST['uname'];
